@@ -7,3 +7,7 @@ proxy:
   scheme: http
   hostname: 127.0.0.1
   port: 11223
+
+channel_id: -1001383316433
+save_dir: ./downloads/
+message_file: ./message_不绝对领域.txt
