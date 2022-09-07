@@ -29,7 +29,7 @@ async def main():
     async with app:
         # Send a message, Markdown is enabled by default
         await app.send_message("me", f"Hi there! I'm using **Pyrogram**{start}")
-        await download_image(channel_id, "message_不绝对领域.txt", save_dir)
+        await download_image(channel_id, message_file, save_dir)
     end = time.time()
     print(end - start)
 
