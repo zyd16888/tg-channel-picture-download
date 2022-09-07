@@ -1,1 +1,7 @@
 images/
+*.session
+*test.*
+test/
+__pycache__/
+# Ignore dynaconf secret files
+.secrets.*
