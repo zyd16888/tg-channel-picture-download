@@ -1,0 +1,2 @@
+pyrogram~=2.0.30
+dynaconf~=3.1.9
