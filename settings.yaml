@@ -11,3 +11,4 @@ proxy:
 channel_id: -1001383316433
 save_dir: ./downloads/
 message_file: ./message_不绝对领域.txt
+offset_id: 0

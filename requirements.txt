@@ -1,2 +1,3 @@
 pyrogram~=2.0.30
 dynaconf~=3.1.9
+tgcrypto~=1.2.3

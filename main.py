@@ -12,6 +12,7 @@ proxy = settings.proxy
 channel_id = settings.channel_id
 message_file = settings.message_file
 save_dir = settings.save_dir
+offset_id = settings.offset_id
 
 
 # Create a new Client instance
@@ -29,7 +30,7 @@ async def main():
     async with app:
         # Send a message, Markdown is enabled by default
         await app.send_message("me", f"Hi there! I'm using **Pyrogram**{start}")
-        await download_image(channel_id, message_file, save_dir)
+        await download_image(channel_id, message_file, save_dir, offset_id)
     end = time.time()
     print(end - start)
 
@@ -42,10 +43,10 @@ def progress(current, total, file_unique_id, num):
     print(f"{num}-{file_unique_id} {current * 100 / total:.1f}%")
 
 
-async def download_image(chat_id,message_name, save_path='./images/', limit=0, ):
+async def download_image(chat_id,message_name, save_path='./images/', offset_id=0, limit=0, ):
     tasks = []
     num = 0 # 计数器
-    async for message in app.get_chat_history(chat_id, limit=limit):
+    async for message in app.get_chat_history(chat_id,offset_id=offset_id, limit=limit):
         await save_message(message, message_name)
         if message.photo:
             photo = message.photo
