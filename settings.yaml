@@ -1,0 +1,9 @@
+# --- {}
+# api_id: 58****0
+# api_hash: "87b2********************d9e"
+
+proxy:
+  enable: true
+  scheme: http
+  hostname: 127.0.0.1
+  port: 11223
