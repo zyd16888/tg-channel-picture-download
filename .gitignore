@@ -4,5 +4,7 @@ message*
 *test.*
 test/
 __pycache__/
+nohup.out
+*.log
 # Ignore dynaconf secret files
 .secrets.*
