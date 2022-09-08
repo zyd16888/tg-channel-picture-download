@@ -1,5 +1,6 @@
 images*/
 *.session
+message*
 *test.*
 test/
 __pycache__/
