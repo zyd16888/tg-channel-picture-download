@@ -1,10 +1,11 @@
 #移动文件
 import os
 import shutil
+from config import settings
 
 # 读取目录
-read_dir = "Y:\share\图\images\images1-2999"
-out_dir = "Y:\share\图\images\images_out"
+read_dir = settings.read_dir
+out_dir = settings.output_dir
 
 # 目录下的文件
 file_list = os.listdir(read_dir)
