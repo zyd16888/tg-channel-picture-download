@@ -26,13 +26,3 @@ for file in file_list:
             shutil.move(os.path.join(read_dir, file), os.path.join("bad", file))
             print("move file: "+file)
 
-# 复制文件
-# num = 0
-# for file in file_list:
-#     num += 1
-#     if not os.path.exists("images_01"):
-#         os.mkdir("images_01")
-#     shutil.copy(os.path.join(read_dir, file), os.path.join("images_01", file))
-#     if num == 4000:
-#         # 结束程序
-#         exit()

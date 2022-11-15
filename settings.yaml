@@ -10,8 +10,11 @@ proxy:
 
 channel_id: -1001383316433
 save_dir: ./downloads/
+# 请求消息的response保存文件
 message_file: ./message_不绝对领域.txt
-offset_id: 0
+# 从哪条消息开始下载，0 表示从最早的消息开始下载
+offset_id: 0  
 
+# 分开存放文件时需要的配置
 read_dir: ./downloads/
 output_dir: ./output/
